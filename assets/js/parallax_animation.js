@@ -1,10 +1,14 @@
 jQuery(document).ready(function(){
-  jQuery('#first-triangle')
+  jQuery('body')
   .each(function(){
-    jQuery('img', this)
+    jQuery('.parallax', this)
     .parallax(
         { mouseport: jQuery(this) },
-        { xparallax: '600px',    yparallax: '800px' }
+        { xparallax: '400px',    yparallax: '300 px' }
     )
-  });    
+  });
+
+  
+
+
 });

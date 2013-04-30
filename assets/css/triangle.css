@@ -1,11 +1,19 @@
 #first-triangle {
+  
+  margin-left: -200px;
+  
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
   -o-transform: rotate(-15deg);
   -ms-transform: rotate(-15deg);
-  top: 200px;
 
+  width: 0; 
+  height: 0; 
+  border-left: 400px solid transparent;
+  border-right: 600px solid transparent;
+  border-bottom: 550px solid black;
 }
+
 #second-triangle {
   -webkit-transform: rotate(-90deg);
   -moz-transform: rotate(-15deg);
@@ -18,11 +26,7 @@
   border-bottom: 4200px solid black;
 }
 .arrow-up {
-  width: 0; 
-  height: 0; 
-  border-left: 400px solid transparent;
-  border-right: 400px solid transparent;
-  border-bottom: 600px solid black;
+  
 }
 
 .arrow-down {
