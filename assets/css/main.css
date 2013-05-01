@@ -1,6 +1,39 @@
+@font-face {
+  font-family: audimat_italic;
+  src: url('../fonts/webfontkit/audimat-italic-webfont.ttf');
+}
+
+@font-face {
+  font-family: audimat_regular;
+  src: url('../fonts/webfontkit/audimat-regular-webfont.ttf');
+}
+
+@font-face {
+  font-family: smartrocket_font;
+  src: url('../fonts/LondrinaSolid-Regular.otf');
+}
+
+
+.audimat_italic{
+  font-family: audimat_italic; /* no .ttf */
+  font-size: 26px;
+}
+
+.audimat_regular{
+  font-family: audimat_regular; /* no .ttf */
+  font-size: 26px;
+}
+
+.smartrocket_font{
+  font-family: smartrocket_font; /* no .ttf */
+  font-size: 46px;
+  
+}
+
 body{
   height: 2000px;
 }
+
 .container {
     margin: 0 auto;
     max-width: 1000px;
