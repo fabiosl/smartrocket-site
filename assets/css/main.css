@@ -71,15 +71,14 @@
 }
 
 
-
-
-body{
-  /*height: 2000px;*/
-}
-
 .container {
     margin: 0 auto;
     max-width: 1000px;
-    height: 5000px;
+}
 
-  }
+.spaceship_bottom {
+  height:1000px;
+  width:1500px;
+  background-image: url('../img/spaceship_bottom.png');
+  background-repeat: no-repeat;
+}

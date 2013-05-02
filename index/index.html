@@ -23,30 +23,34 @@
   <script src="../assets/js/jquery.parallax.js"></script>
   <script src="../assets/js/parallax_animation.js"></script>
   <script>
-  $(window).scroll(function() {
-   if($(window).scrollTop() + $(window).height() == $(document).height()) {
-     $(window).scrollTop(0)
-   }
- });
+ //  $(window).scroll(function() {
+ //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+ //     $(window).scrollTop(0)
+ //   }
+ // });
 
   </script>
 </head>
 
 <body screen_capture_injected="true" cz-shortcut-listen="true">
-
-
+  
   <!-- First Triangle -->
   <div>
     <div id="first-triangle" ></div>
     <img src="../assets/img/logo_white.png" class="logo" style="left:80px;bottom:200px;position:relative; "/>  
   </div>
+
   <!-- Parallax spaceship-->
   <div style="position:absolute; padding-left: 670px; margin-top:-350px; min-height: 50px; min-width: 50px;"><img src="../assets/img/nave.png" class="parallax" /></div>
   <!-- End parallax spaceship-->
+  
+  <!-- Menu -->
   <div style="position:absolute; right:50px;">
     <img src="../assets/img/menu.png" style="margin-top: -500px;" />
   </div>
+  <!-- End Menu -->
 
+  <!-- Container -->
   <div class="container" style="margin-top:150px;">
     <!-- OUR WORK -->
     <div style="text-align: center;">
@@ -116,8 +120,11 @@
         </form>
       </div>
     </div>
-    <div>
-    <div class="triangle parallax" style="padding-bottom:1000px;"></div>
-    </div>
+  
+  </div>
+  <!-- END Container-->
+  <div style="margin-left:700px; margin-top: 200px">
+  <div class="spaceship_bottom parallax-light"></div>
+  </div>
   </body>
   </html>
