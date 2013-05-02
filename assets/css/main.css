@@ -41,6 +41,11 @@
     float:left;
 }
 
+.circle span {
+  display:none;
+}
+
+
 .circle:hover{
     width: 260px;
     height: 260px;
@@ -52,12 +57,20 @@
     float:left;
 }
 
+.circle:hover span {
+  display:block;
+  color:gray;
+}
+
+
 .circle label {
   text-align: center; margin-top: 4.0em;
   font-family: smartrocket_font;
   font-size: 20px;
   width:100%;
 }
+
+
 
 
 body{
