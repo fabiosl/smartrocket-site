@@ -23,11 +23,15 @@
   <script src="../assets/js/jquery.parallax.js"></script>
   <script src="../assets/js/parallax_animation.js"></script>
   <script>
- //  $(window).scroll(function() {
- //   if($(window).scrollTop() + $(window).height() == $(document).height()) {
- //     $(window).scrollTop(0)
- //   }
- // });
+  $(window).scroll(function() {
+   // alert (document.body.scrollTop)
+   if(document.body.scrollTop === 0) {
+     $(window).scrollTop($(document).height() - 700);
+   }
+   if($(window).scrollTop() + $(window).height() == $(document).height()) {
+     $(window).scrollTop(10)
+   }
+ });
 
   </script>
 </head>
