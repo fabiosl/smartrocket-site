@@ -39,15 +39,28 @@
 <body screen_capture_injected="true" cz-shortcut-listen="true">
   
   <!-- First Triangle -->
-  <div>
+  <div style="height:800px; margin-top:-50px;">
     <div id="first-triangle" ></div>
-    <img src="../assets/img/logo_white.png" class="logo" style="left:80px;bottom:200px;position:relative; "/>  
+    <!-- Parallax spaceship-->
+    <div style="position:absolute; padding-left: 80px; margin-top:-800px; min-height: 50px; min-width: 50px;"><img src="../assets/img/nave.png"/></div>
+    <!-- End parallax spaceship-->
+  
+    <!-- We're Smart Rocket -->
+    <div style="right:-600px; position:relative; z-index:100; ; margin-top:-700px; max-width:720px; text-align:right">
+      <label class="smartrocket_font" style="font-size: 90px; display:block;width: 100%; color:#000000; line-height:100%"> WE'RE SMARTROCKET </label>
+      <label class="audimat_regular" style="font-size: 25px;line-height:100%;"> //MUSSUM IPSUM CACILDS, VIDIS LITRO ABERTIS</label>
+      
+      <div style="max-width:500px; padding-top:30px; float:right">
+        <label class="audimat_italic" style="font-size: 20px; color: black; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+
+        <label class="audimat_italic" style="font-size: 20px; padding-top:30px; color: black; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+
+      </div>
+    </div>
+    
+    <img src="../assets/img/logo_white.png" class="logo" style="left:80px;bottom:-150px;position:relative; "/>    
   </div>
 
-  <!-- Parallax spaceship-->
-  <div style="position:absolute; padding-left: 80px; margin-top:-870px; min-height: 50px; min-width: 50px;"><img src="../assets/img/nave.png"/></div>
-  <!-- End parallax spaceship-->
-  
   <!-- Menu -->
   <div style="position:absolute; right:50px;">
     <a id="simple-menu" href="#sidr"><img src="../assets/img/menu.png" style="margin-top: -500px;" /></a>
