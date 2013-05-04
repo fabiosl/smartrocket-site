@@ -19,9 +19,21 @@
   <link rel="apple-touch-icon-precomposed" href="../assets/ico/apple-touch-icon-57-precomposed.png">
   <link rel="shortcut icon" href="../assets/ico/favicon.png">
   <link type="text/css" rel="stylesheet" href="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/style.css"><script type="text/javascript" charset="utf-8" src="chrome-extension://cpngackimfmofbokmjmljamhdncknpmg/page_context.js"></script><style type="text/css"></style>
+
+  <link rel="stylesheet" type="text/css" href="../assets/js/sidr/stylesheets/jquery.sidr.dark.css">
+
   <script src="../assets/js/jquery.js"></script>
   <script src="../assets/js/jquery.parallax.js"></script>
   <script src="../assets/js/parallax_animation.js"></script>
+  <script src="../assets/js/sidr/jquery.sidr.min.js"></script>
+  
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('#simple-menu').sidr({
+        side: 'right'
+      });
+    });
+  </script>
 </head>
 
 <body screen_capture_injected="true" cz-shortcut-listen="true">
@@ -38,7 +50,17 @@
   
   <!-- Menu -->
   <div style="position:absolute; right:50px;">
-    <img src="../assets/img/menu.png" style="margin-top: -500px;" />
+    <a id="simple-menu" href="#sidr"><img src="../assets/img/menu.png" style="margin-top: -500px;" /></a>
+  </div>
+
+  <div id="sidr">
+  <!-- Menu content -->
+    <ul>
+      <li><a href="#">Agency</a></li>
+      <li class="active"><a href="#">Our Work</a></li>
+      <li><a href="#">How we work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
   </div>
   <!-- End Menu -->
 
