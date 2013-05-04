@@ -26,12 +26,25 @@
   <script src="../assets/js/jquery.parallax.js"></script>
   <script src="../assets/js/parallax_animation.js"></script>
   <script src="../assets/js/sidr/jquery.sidr.min.js"></script>
+  <script src="javascripts/jquery.touchwipe.js"></script>
   
   <script type="text/javascript">
     $(document).ready(function() {
       $('#simple-menu').sidr({
         side: 'right'
       });
+    });
+
+    $(window).touchwipe({
+      wipeLeft: function() {
+        // Close
+        $.sidr('close', 'sidr-main');
+      },
+      wipeRight: function() {
+        // Open
+        $.sidr('open', 'sidr-main');
+      },
+      preventDefaultEvents: false
     });
   </script>
 </head>
