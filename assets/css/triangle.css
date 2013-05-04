@@ -1,6 +1,7 @@
 #first-triangle {
   
-  margin-left: -200px;
+  margin-left: -160px;
+  margin-top: 150px;
   
   -webkit-transform: rotate(-15deg);
   -moz-transform: rotate(-15deg);
@@ -11,7 +12,7 @@
   height: 0; 
   border-left: 400px solid transparent;
   border-right: 600px solid transparent;
-  border-bottom: 550px solid black;
+  border-bottom: 750px solid black;
 }
 
 #second-triangle {
