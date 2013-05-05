@@ -38,11 +38,11 @@
     $(window).touchwipe({
       wipeLeft: function() {
         // Close
-        $.sidr('close', 'sidr-main');
+        $.sidr('close');
       },
       wipeRight: function() {
         // Open
-        $.sidr('open', 'sidr-main');
+        $.sidr('open');
       },
       preventDefaultEvents: false
     });
@@ -55,7 +55,7 @@
   <div style="height:800px; margin-top:-50px;">
     <div id="first-triangle" ></div>
     <!-- Parallax spaceship-->
-    <div style="position:absolute; padding-left: 80px; margin-top:-800px; min-height: 50px; min-width: 50px;"><img src="../assets/img/nave.png"/></div>
+    <div style="position:absolute; padding-left: 80px; margin-top:-800px; min-height: 50px; min-width: 50px;"><img src="../assets/img/nave.png"/ onclick="clicked()"></div>
     <!-- End parallax spaceship-->
   
     <!-- We're Smart Rocket -->
