@@ -21,42 +21,27 @@
   <script src="../assets/js/parallax_animation.js"></script>
   <script src="../assets/js/sidr/jquery.sidr.min.js"></script>
   <script src="../assets/js/jquery.touchwipe.js"></script>
+  <script src="../assets/js/main.js"></script>
   
   <script type="text/javascript">
-    $(document).ready(function() {
-      $('#simple-menu').sidr({
-        side: 'right'
-      });
-    });
-
-    $(window).touchwipe({
-      wipeLeft: function() {
-        // Close
-        $.sidr('close');
-      },
-      wipeRight: function() {
-        // Open
-        $.sidr('open');
-      },
-      preventDefaultEvents: false
-    });
+    
   </script>
 </head>
 
 <body screen_capture_injected="true" cz-shortcut-listen="true">
   <!-- Menu icon -->
-  <div style="position:absolute; right:150px; top: 100px;font-size: 18px; font-weight:bold; ">
-    <span id="simple-menu" href="#sidr" class="audimat_regular"> MENU </span> <img src="../assets/img/menu.png" style="margin-bottom:5px" />
+  <div id="simple-menu" style="position:fixed; right:4%; top: 15%;font-size: 18px; font-weight:bold; cursor:pointer; " >
+    <span class="audimat_regular" style="color:#C0C0C0;"> MENU </span><img src="../assets/img/menu.png" style="margin-bottom:5px" />
   </div>
   <!-- End menu Icon -- >
 
   <!-- Sidr Menu content -->
   <div id="sidr">
     <ul>
-      
-      <li><a href="#our-work">Our Work</a></li>
-      <li><a href="#how-we-work">How we work</a></li>
-      <li><a href="#contact-us">Contact</a></li>
+      <li><a onClick="closeMenu()"; href="#were-smartrocket">We're SmartRocket</a></li>
+      <li><a onClick="closeMenu()"; href="#our-work">Our Work</a></li>
+      <li><a onClick="closeMenu()"; href="#how-we-work">How we work</a></li>
+      <li><a onClick="closeMenu()"; href="#contact-us">Contact</a></li>
     </ul>
   </div>
   <!-- End Sidr Menu content -->
@@ -65,8 +50,8 @@
   <!-- Container -->
   <div class="container" style="margin-top:150px;">
     <!-- WE'RE SMARTROCKET -->
-    <div style="margin-left:50%; width: 50%; display:block; margin-bottom: 300px;">
-      <div style="text-align: right;margin 0 auto;">
+    <div id="were-smartrocket" style="margin-left:50%; width: 50%; display:block; margin-bottom: 300px;">
+      <div style="text-align: right;">
         <label class="smartrocket_font big" style="font-size:500%"> WE'RE SMARTROCKET </label>
         <label class="audimat_regular" style="font-size: 25px;line-height:100%;"> //MUSSUM IPSUM CACILDS, VIDIS LITRO ABERTIS</label>
 
