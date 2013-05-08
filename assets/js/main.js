@@ -6,16 +6,20 @@ $(document).ready(function() {
 
 $(window).touchwipe({
   wipeLeft: function() {
-    // Close
-    $.sidr('close');
+    $.sidr('open');
   },
   wipeRight: function() {
-    // Open
-    $.sidr('open');
+    $.sidr('close');
+    
   },
   preventDefaultEvents: false
 });
 
 function closeMenu(){
   $.sidr('close');
+}
+
+function animateToAnchor(anchor){
+  var aTag = $(anchor);
+  $('html,body').animate({scrollTop: aTag.offset().top},'slow', closeMenu());
 }

@@ -38,10 +38,10 @@
   <!-- Sidr Menu content -->
   <div id="sidr">
     <ul>
-      <li><a onClick="closeMenu()"; href="#were-smartrocket">We're SmartRocket</a></li>
-      <li><a onClick="closeMenu()"; href="#our-work">Our Work</a></li>
-      <li><a onClick="closeMenu()"; href="#how-we-work">How we work</a></li>
-      <li><a onClick="closeMenu()"; href="#contact-us">Contact</a></li>
+      <li><a onClick="animateToAnchor('#were-smartrocket')"; href="javascript:void(0);">We're SmartRocket</a></li>
+      <li><a onClick="animateToAnchor('#our-work')"; href="javascript:void(0);">Our Work</a></li>
+      <li><a onClick="animateToAnchor('#how-we-work')"; href="javascript:void(0);">How we work</a></li>
+      <li><a onClick="animateToAnchor('#contact-us')"; href="javascript:void(0);">Contact</a></li>
     </ul>
   </div>
   <!-- End Sidr Menu content -->
@@ -53,8 +53,10 @@
     
     <!-- WE'RE SMARTROCKET -->
     <div id="were-smartrocket" style=" display:block; margin-bottom: 600px; width: 100%;">
-      <div style="height:500px; width: 500px; float:left; background-image: url('../assets/img/triangle5.png'); background-repeat: no-repeat;">
-        <div><img class="parallax"src="../assets/img/nave.png" /></div>
+      <div style="width:50%; height:100%;float:left;">
+        <div><img class=""src="../assets/img/triangle5.png" /></div>
+        <div style="margin-top:-500px"><img class="parallax"src="../assets/img/nave.png" /></div>
+        
       </div>
 
       <div style="text-align: right;width: 50%; float:right">
@@ -62,7 +64,7 @@
         <label class="audimat_regular" style="font-size: 25px;line-height:100%;"> //MUSSUM IPSUM CACILDS, VIDIS LITRO ABERTIS</label>
 
         <div style="">
-          <label class="audimat_italic" style="font-size: 20px; color: black; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+          <label class="audimat_italic normal" style="">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
 
           <label class="audimat_italic" style="font-size: 20px; padding-top:30px; color: black; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
 
@@ -94,10 +96,10 @@
           <label class="audimat_regular" style="font-size: 25px;margin-bottom: 10px;line-height:100%; color:white;"> //SOME OTHER COOL STUFF! :)</label>
           <label class="audimat_italic" style="font-size: 20px;margin-bottom: 40px;line-height:100%; color:gray"> // aiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu h</label>
         </div>
-        <div style="display: inline-table; width:100%; min-height:290px; text-align: center; ">
+        <div style="display: inline-table; width:100%; text-align: center; ">
 
           <div class="circle-container">
-            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute; min-width:200px;">
+            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
               <div class="greenBorder" style="#position: relative; #top: -50%">
                 <label>01. </label>
                 <label style="margin-top: 0px">LISTEN!</label>
@@ -107,7 +109,7 @@
           </div>
 
           <div class="circle-container">
-            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute; min-width:200px;">
+            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
               <div class="greenBorder" style="#position: relative; #top: -50%">
                 <label>01. </label>
                 <label style="margin-top: 0px">LISTEN!</label>
@@ -117,7 +119,7 @@
           </div>
 
           <div class="circle-container">
-            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute; min-width:200px;">
+            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
               <div class="greenBorder" style="#position: relative; #top: -50%">
                 <label>01. </label>
                 <label style="margin-top: 0px">LISTEN!</label>
@@ -127,7 +129,7 @@
           </div>
 
           <div class="circle-container">
-            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute; min-width:200px;">
+            <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
               <div class="greenBorder" style="#position: relative; #top: -50%">
                 <label>01. </label>
                 <label style="margin-top: 0px">LISTEN!</label>
@@ -142,9 +144,7 @@
       <!-- CONTACT US -->
       <div id="contact-us" style="background-color:black; padding: 20px">
         <div style="text-align: left; width:100%;" >        
-          <label class="smartrocket_font big" style="color:white;" > CONTACT US
-          </label>
-
+          <label class="smartrocket_font big" style="color:white;" > CONTACT US </label>
           <label class="audimat_regular normal" style="width:100%; color:gray;">Av. Mato Grosso, 667, João Pessoa - Paraíba. (Tot coworking) </label>
           <label class="audimat_regular normal" style="width:100%; color:gray;">+55 (83) 9134-6675 / contact@smartrocket.com.br</label>
         </div>

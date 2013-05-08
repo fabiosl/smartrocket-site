@@ -36,26 +36,21 @@
   overflow: hidden; 
   #top:50%; 
   vertical-align: middle;
-  padding-top: 30px;
-  margin-right: 15px;
+  margin: 0 auto;
 }
 
 .circle {
-    width:200px;
-    height: 200px;
-    background-image: url('../img/circle.png');
-    background-repeat: no-repeat;
-    background-position: 0px -260px;
-    margin: 0px 15px 0px 15px;
-    
-    
+    width:230px;
+    height: 230px;
+    background-image: url('../img/circle_small.png');
+    background-repeat: no-repeat center;
+    margin: 0px;
     vertical-align: middle;
 }
 
 .circle span {
   display:none;
 }
-
 
 .circle label {
   text-align: center; 
@@ -66,11 +61,7 @@
 }
 
 .circle:hover{
-    width: 260px;
-    height: 260px;
-    background-image: url('../img/circle.png');
-    background-position: 0px 0px;
-    background-repeat: no-repeat;
+    background-image: url('../img/circle_big.png');
     text-align: center;
 }
 
@@ -98,7 +89,7 @@
 }
 
 .normal{
-  font-size: 150%; 
+  font-size: 130%; 
   line-height:100%;
   width:100%;
 }
