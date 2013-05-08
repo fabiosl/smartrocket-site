@@ -30,15 +30,26 @@
 
 }
 
+.circle-container{
+  display: inline-table; 
+  #position: relative; 
+  overflow: hidden; 
+  #top:50%; 
+  vertical-align: middle;
+  padding-top: 30px;
+  margin-right: 15px;
+}
+
 .circle {
     width:200px;
     height: 200px;
     background-image: url('../img/circle.png');
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
     background-position: 0px -260px;
-    margin: 15px;
-    text-align: center;
-    float:left;
+    margin: 0px 15px 0px 15px;
+    
+    
+    vertical-align: middle;
 }
 
 .circle span {
@@ -46,28 +57,26 @@
 }
 
 
+.circle label {
+  text-align: center; 
+  font-family: smartrocket_font;
+  font-size: 20px;
+  width:100%;
+
+}
+
 .circle:hover{
     width: 260px;
     height: 260px;
-    margin: 0px;
     background-image: url('../img/circle.png');
     background-position: 0px 0px;
     background-repeat: no-repeat;
     text-align: center;
-    float:left;
 }
 
 .circle:hover span {
   display:block;
   color:gray;
-}
-
-
-.circle label {
-  text-align: center; margin-top: 4.0em;
-  font-family: smartrocket_font;
-  font-size: 20px;
-  width:100%;
 }
 
 .container {
@@ -83,14 +92,17 @@
 }
 
 .big{
-  font-size: 900%; 
+  font-size: 500%; 
   line-height:100%;
   width:100%;
 }
 
 .normal{
-  font-size: 200%; 
+  font-size: 150%; 
   line-height:100%;
   width:100%;
 }
 
+body{ 
+  height: 2800px;
+}
