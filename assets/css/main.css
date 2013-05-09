@@ -94,6 +94,14 @@
   width:100%;
 }
 
+.triangle-up{
+  width:100%;
+  height: 200px;
+  background-image: url('../img/triangle.png');
+  
+  background-repeat: no-repeat;
+}
+
 body{ 
-  height: 2800px;
+  /*height: 2800px;*/
 }

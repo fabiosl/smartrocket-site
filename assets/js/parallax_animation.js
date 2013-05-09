@@ -14,7 +14,7 @@ jQuery(document).ready(function(){
     jQuery('.parallax-light', this)
     .parallax(
         { mouseport: jQuery(this) },
-        { xparallax: '100px',    yparallax: '100px' }
+        { xparallax: '100px', yparallax: '100px' }
     )
   });
 
