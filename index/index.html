@@ -30,13 +30,14 @@
 
 <body screen_capture_injected="true" cz-shortcut-listen="true">
   <!-- Menu icon -->
-  <div id="simple-menu" style="position:fixed; right:2%; top: 10%;font-size: 18px; font-weight:bold; cursor:pointer; background-color: #fff; box-shadow: 0px 1px 10px #555; padding:8px 10px;border-radius: 6px;" >
-    <span class="audimat_regular" style="color:#0f1113;"> MENU </span><img src="../assets/img/menu.png" style="margin-bottom:5px" />
+  <div id="simple-menu" style="" >
+    <span class="audimat_regular" style="color:#0f1113; display:inline;"> MENU </span>
+    <img src="../assets/img/menu.png" style="margin-bottom:5px" />
   </div>
   <!-- End menu Icon -- >
 
   <!-- Sidr Menu content -->
-  <div id="sidr">
+  <div id="sidr" style="height:100%">
     <ul>
       <li><a onClick="animateToAnchor('#were-smartrocket')"; href="javascript:void(0);">We're SmartRocket</a></li>
       <li><a onClick="animateToAnchor('#our-work')"; href="javascript:void(0);">Our Work</a></li>
@@ -50,21 +51,19 @@
   <!-- Container -->
   <div class="container" style="margin-top:150px;">
 
-
     <!-- WE'RE SMARTROCKET -->
-    <div id="were-smartrocket" style="display:block; margin-bottom: 600px; width: 100%;">
-      <div style="width:50%; height:100%;float:left;">
+    <div id="were-smartrocket" class="main-container-div" style="margin-bottom:600px;">
+      <div class="hideable" style="width:50%; height:100%; float:left;">
         <div><img class=""src="../assets/img/first_triangle.png" /></div>
-        <div style="margin-top:-500px"><img class="parallax"src="../assets/img/nave.png" /></div>
-        
+        <div style="margin-top:-500px"><img class="parallax" src="../assets/img/nave.png" /></div>
       </div>
 
-      <div style="text-align: right;width: 50%; float:right">
-        <label class="smartrocket_font big" style="font-size:500%"> WE'RE SMART ROCKET </label>
-        <label class="audimat_regular" style="font-size: 25px;line-height:100%;"> //MUSSUM IPSUM CACILDS, VIDIS LITRO ABERTIS</label>
+      <div id="were-smartrocket-text" style="text-align: right;width: 50%; float:right">
+        <span class="smartrocket_font big" style="font-size:700%; "> WE'RE SMART ROCKET </span>
+        <span class="audimat_regular subtitle" style=";"> //MUSSUM IPSUM CACILDS, VIDIS LITRO ABERTIS</span>
 
         <div style="">
-          <label class="audimat_italic normal" style="">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+          <span class="audimat_italic normal" style="">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </span>
 
         </div>
         <br style="clear:both;"/>
@@ -72,13 +71,13 @@
     </div>
 
     <!-- OUR WORK -->
-    <div id="our-work" style="position:relative; text-align:center; width: 100%">
+    <div id="our-work" class="main-container-div" style="margin-bottom:150px">
       <label class="smartrocket_font big">OUR WORK</label>
-      <label class="audimat_regular" style="font-size: 25px;margin-bottom: 40px;line-height:100%;"> //SOME COOL STUFF GOES HERE! :)</label>
+      <label class="audimat_regular subtitle"  style="margin-bottom: 40px;"> //SOME COOL STUFF GOES HERE! :)</label>
       <img src="../assets/img/sr_devices.png">
-      <label class="audimat_italic" style="font-size: 20px; color: gray; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+      <label class="audimat_italic" style="font-size: 20px; color: gray;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
 
-      <label class="audimat_italic" style="font-size: 20px;margin-bottom: 100px; color: gray; line-height:100%;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
+      <label class="audimat_italic" style="font-size: 20px;margin-bottom: 100px; color: gray;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
     </div> 
   </div>
   <!-- END Container-->
@@ -92,19 +91,20 @@
     <!-- Inner container -->
     <div class="container">
       <!-- HOW WE WORK-->
-      <div id="how-we-work" style="text-align:center;height:100%; width:100%; display: block;">
-        <div style=" text-align:center;">
+      <div id="how-we-work" class="main-container-div">
+        <div>
           <label class="smartrocket_font big" style="color:white;" > HOW WE WORK </label>
-          <label class="audimat_regular" style="font-size: 25px;margin-bottom: 10px;line-height:100%; color:white;"> //SOME OTHER COOL STUFF! :)</label>
-          <label class="audimat_italic" style="font-size: 20px;margin-bottom: 40px;line-height:100%; color:gray"> // aiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu h</label>
+          <label class="audimat_regular subtitle" style="margin-bottom: 10px; color:white;"> //SOME OTHER COOL STUFF! :)</label>
+          <label class="audimat_italic subtitle" style="font-size: 20px;margin-bottom: 40px; color:gray"> // aiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu haiuehiau hiuaeh iuaehiuaeh iuahe iuahei uhaeuhaeiu h</label>
         </div>
-        <div style="display: inline-table; width:100%; text-align: center; ">
+
+        <div class="circles">
 
           <div class="circle-container">
             <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
-              <div class="greenBorder" style="#position: relative; #top: -50%">
+              <div class="circle-inner-text">
                 <label>01. </label>
-                <label style="margin-top: 0px">LISTEN!</label>
+                <label>LISTEN!</label>
                 <span class="audimat_italic"> Something! Something! Something! Something! Something! Something! Something! Something! Something! Something!</span>
               </div>
             </div>
@@ -112,9 +112,9 @@
 
           <div class="circle-container">
             <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
-              <div class="greenBorder" style="#position: relative; #top: -50%">
+              <div class="circle-inner-text">
                 <label>01. </label>
-                <label style="margin-top: 0px">LISTEN!</label>
+                <label>LISTEN!</label>
                 <span class="audimat_italic"> Something! Something! Something! Something! Something! Something! Something! Something! Something! Something!</span>
               </div>
             </div>
@@ -122,9 +122,9 @@
 
           <div class="circle-container">
             <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
-              <div class="greenBorder" style="#position: relative; #top: -50%">
+              <div class="circle-inner-text">
                 <label>01. </label>
-                <label style="margin-top: 0px">LISTEN!</label>
+                <label>LISTEN!</label>
                 <span class="audimat_italic"> Something! Something! Something! Something! Something! Something! Something! Something! Something! Something!</span>
               </div>
             </div>
@@ -132,9 +132,9 @@
 
           <div class="circle-container">
             <div class="circle" style="display: table-cell; vertical-align: middle; #position: absolute;">
-              <div class="greenBorder" style="#position: relative; #top: -50%">
+              <div class="circle-inner-text">
                 <label>01. </label>
-                <label style="margin-top: 0px">LISTEN!</label>
+                <label>LISTEN!</label>
                 <span class="audimat_italic"> Something! Something! Something! Something! Something! Something! Something! Something! Something! Something!</span>
               </div>
             </div>
@@ -142,16 +142,16 @@
 
         </div>
       </div> 
-      </div> 
-      <!-- end first inner container-->
-      <!-- Second inner container -->
-      <div class="container">
+    </div> 
+    <!-- end first inner container-->
+    <!-- Second inner container -->
+    <div class="container">
       <!-- CONTACT US -->
-      <div id="contact-us" style="margin-top: 500px; background-color:#0f1113; padding: 20px">
+      <div id="contact-us" style="background-color:#0f1113; padding: 20px">
         <div style="text-align: left; width:100%;" >        
-          <label class="smartrocket_font big" style="color:white;" > CONTACT US </label>
-          <label class="audimat_regular normal" style="width:100%; color:gray;">Av. Mato Grosso, 667, João Pessoa - Paraíba. (Tot coworking) </label>
-          <label class="audimat_regular normal" style="width:100%; color:gray;">+55 (83) 9134-6675 / contact@smartrocket.com.br</label>
+          <span class="smartrocket_font big" style="color:white;" > CONTACT US </span>
+          <span class="audimat_regular normal" style="width:100%; color:gray;">Av. Mato Grosso, 667, João Pessoa - Paraíba. (Tot coworking) </span>
+          <span class="audimat_regular normal" style="width:100%; color:gray;">+55 (83) 9134-6675 / contact@smartrocket.com.br</span>
         </div>
 
         <div class="row" style="">
@@ -171,7 +171,11 @@
   <!-- Triangle DOWN -->
   <div  style="position: relative; left: 0; top: 0;">
     <img style="width:100%; position: relative; top: 0; left: 0;" src="../assets/img/triangledown.png">
-    <img class="parallax-light" style="height:200px; position: absolute; bottom: 30%; padding-left:90px; margin-right:0%" src="../assets/img/spaceship_bottom.png"/>
+    <div style="width:960px">
+      <div id="inner" style="width:200px; margin:0 auto;"><img id="spaceship-bottom" class="parallax-light hideable" style="height:200px; position: absolute; bottom: 0%;" src="../assets/img/spaceship_bottom.png"/></div>
+    </div>
+
+    
   </div><!-- End Triangle down -->
 </body>
 </html>

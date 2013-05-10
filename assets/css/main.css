@@ -16,20 +16,31 @@
 
 .audimat_italic{
   font-family: audimat_italic; /* no .ttf */
-  
+  line-height:100%;
+  display:block;
 }
 
 .audimat_regular{
   font-family: audimat_regular; /* no .ttf */
-  
+  line-height:100%;
+  display:block;
 }
 
 .smartrocket_font{
   font-family: smartrocket_font; /* no .ttf */
-  
-
+  line-height:100%;
+  display: block;
 }
 
+.subtitle{
+  font-size: 25px;
+}
+
+.circles{
+  display: inline-table;
+  width:100%;
+  text-align: center;
+}
 .circle-container{
   display: inline-table; 
   #position: relative; 
@@ -69,8 +80,12 @@
   display:block;
   color:gray;
 }
-
+.circle-inner-text{
+  #position: relative; 
+  #top: -50%
+}
 .container {
+
     margin: 0 auto;
     max-width: 1000px;
 }
@@ -102,6 +117,26 @@
   background-repeat: no-repeat;
 }
 
-body{ 
-  /*height: 2800px;*/
+#simple-menu{
+  position:fixed; 
+  right:2%; 
+  top: 10%;
+  font-size: 18px; 
+  font-weight:bold; 
+  cursor:pointer; 
+  background-color: #fff; 
+  box-shadow: 0px 1px 10px #555;
+  padding:8px 10px;
+  border-radius: 6px;
+}
+
+.main-container-div{
+  margin-bottom: 300px;
+  display:block;
+  width: 100%;
+  text-align:center;
+}
+
+.container{
+  width:960px;
 }
