@@ -147,27 +147,32 @@
   width:78px;
   height: 78px;
   background-image: url('../img/social_icons.png');
-  background-position: 0px -75px;
+  background-position: 0px -78px;
+  background-repeat:no-repeat;
   display: inline-block;
+
   margin:10px;
 }
 
 .facebook-icon:hover{
   background-position: 0px 0px;
+  background-repeat:no-repeat;
 }
 
 .twitter-icon {
   width:78px;
   height: 78px;
   background-image: url('../img/social_icons.png');
-  background-position: -77px -75px;
+  background-position: -78px -78px;
+  background-repeat:no-repeat;
 
   display: inline-block;
   margin:10px;
 }
 
 .twitter-icon:hover{
-  background-position: -77px 0px;
+  background-position: -78px 0px;
+  background-repeat:no-repeat;
 }
 
 /*Shows up when screen resolution is below 960px*/
