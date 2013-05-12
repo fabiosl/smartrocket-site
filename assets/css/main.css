@@ -53,7 +53,7 @@
 .circle {
     width:230px;
     height: 230px;
-    background-image: url('../img/circle_small.png');
+    background-image: url('../img/circles.png');
     background-repeat: no-repeat center;
     margin: 0px;
     vertical-align: middle;
@@ -72,7 +72,8 @@
 }
 
 .circle:hover{
-    background-image: url('../img/circle_big.png');
+    background-image: url('../img/circles.png');
+    background-position: 0px -230px;
     text-align: center;
 }
 
@@ -168,5 +169,9 @@
 background-position: -115px -0px;
 }
 
+/*Shows up when screen resolution is below 960px*/
+.showable{
+  display:none;
+}
 
 
