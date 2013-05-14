@@ -71,15 +71,15 @@ $(document).ready(function() {
       "top": myY + 'px'
     });
 
-    $('#send-message').click(function(){    
-        if(validateInput()){
-            sendMail();
-        }else
-        {
-            alert('Please fill all fields to send us message.');
-        }
-    });
+  });
 
+  $('#send-message').click(function(){    
+      if(validateInput()){
+          sendMail();
+      }else
+      {
+          alert('Please fill all fields to send us message.');
+      }
   });
 
   init();
