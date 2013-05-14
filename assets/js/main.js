@@ -23,8 +23,7 @@ $(document).ready(function() {
   });
 
   $(window).resize(function() {
-    resize()
-    // $('body').prepend('<div>' + $(window).width() + '</div>');
+    resize();
   });
 
   function init() {
@@ -72,6 +71,15 @@ $(document).ready(function() {
       "top": myY + 'px'
     });
 
+    $('#send-message').click(function(){    
+        if(validateInput()){
+            sendMail();
+        }else
+        {
+            alert('Please fill all fields to send us message.');
+        }
+    });
+
   });
 
   init();
@@ -115,3 +123,82 @@ function animateToAnchor(anchor){
   var aTag = $(anchor);
   $('html,body').animate({scrollTop: aTag.offset().top},'slow', closeMenu());
 }
+
+var validateInput = function(){
+    var isValid = true;
+    $('input, textarea').each(function(){
+        if($(this).hasClass('required'))
+        {
+            if($(this).val()!=''){
+                if($(this).hasClass('email'))
+                {
+                    var emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+                    if(!emailReg.test($(this).val())){
+                        isValid = false;
+                        alert('Your email is not in valid format');
+                    }
+                }
+            }else
+            {
+                isValid = false;
+            }
+        }
+    });
+    return isValid;
+};
+
+var resetInput = function(){
+    $('input, textarea').each(function() {
+        $(this).val('').text('');
+    });
+};
+
+var sendMail = function(){
+    var params = {
+        'action'    : 'SendMessage',
+        'name'      : $('[name=contact_name]').val(),
+        'email'     : $('[name=contact_email]').val(),
+        'subject'   : 'New Website Message',
+        'message'   : $('[name=contact_message]').val()
+    };
+    $.ajax({
+        type: "POST",
+        url: "php/mainHandler.php",
+        data: params,
+        success: function(response){
+            if(response){
+                var responseObj = jQuery.parseJSON(response);
+                if(responseObj.ResponseData)
+                    alert('Your message was sent. Thank you!');
+            }
+            resetInput();
+        },
+        error: function (xhr, ajaxOptions, thrownError){
+            //xhr.status : 404, 303, 501...
+            var error = null;
+            switch(xhr.status)
+            {
+                case "301":
+                    error = "Redirection Error!";
+                    break;
+                case "307":
+                    error = "Error, temporary server redirection!";
+                    break;
+                case "400":
+                    error = "Bad request!";
+                    break;
+                case "404":
+                    error = "Page not found!";
+                    break;
+                case "500":
+                    error = "Server is currently unavailable!";
+                    break;
+                default:
+                    error ="Unespected error, please try again later.";
+            }
+            if(error){
+                alert(error);
+            }
+        }
+    });
+};

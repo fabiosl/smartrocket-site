@@ -168,12 +168,12 @@
 
         <div class="row" style="">
           <div class="span3">
-            <label class="audimat_regular normal" style=" color:white;;" name="contact_name">// Full Name</label>
-            <input type="text" class="span3" placeholder="Your Full Name">
-            <label class="audimat_regular normal" style="color:white;;" name="contact_email">// Email Address</label>
-            <input type="text" class="span3" placeholder="Your email address">
-            <label class="audimat_regular normal" style="color:white;;" name="contact_message">// Message</label>
-            <textarea name="message" id="message" class="input-xlarge span5" rows="10" placeholder="What are you waiting for? Drop us a line!"></textarea>
+            <label class="audimat_regular normal" style=" color:white;;">// Full Name</label>
+            <input type="text" class="span3 required" placeholder="Your Full Name" name="contact_name">
+            <label class="audimat_regular normal" style="color:white;;">// Email Address</label>
+            <input type="text" class="span3 required email" placeholder="Your email address" name="contact_email">
+            <label class="audimat_regular normal" style="color:white;;" >// Message</label>
+            <textarea name="message" id="message" class="input-xlarge span5 required" rows="10" placeholder="What are you waiting for? Drop us a line!" name="contact_message"></textarea>
             <button type="submit" class="btn btn btn-inverse" id="send-message">Send</button>
           </div>
         </div>
