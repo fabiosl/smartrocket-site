@@ -1,18 +1,99 @@
 #first-triangle {
   
-  margin-left: -160px;
-  margin-top: 150px;
+  margin-left: -330px;
+  margin-top: -90px;
   
-  -webkit-transform: rotate(-15deg);
-  -moz-transform: rotate(-15deg);
-  -o-transform: rotate(-15deg);
-  -ms-transform: rotate(-15deg);
+  -webkit-transform: rotate(-10deg);
+  -moz-transform: rotate(-10deg);
+  -o-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
 
   width: 0; 
   height: 0; 
-  border-left: 400px solid transparent;
-  border-right: 600px solid transparent;
+  border-left: 500px solid transparent;
+  border-right: 500px solid transparent;
   border-bottom: 750px solid black;
+  z-index: -1;
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position:relative;
+}
+
+.small-triangle {
+  z-index:9;
+}
+
+#small-first-triangle {
+  top:250px;
+  right:100px;
+  /*z-index:9;*/
+
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);  
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid black;
+  width: 0; 
+  height: 0; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position:relative;
+}
+
+#small-second-triangle {
+  top:100px;
+  right:-1100px;
+
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);  
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid black;
+  width: 0; 
+  height: 0; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position:relative;
+}
+
+#small-third-triangle {
+  top:100px;
+  right:100px;
+
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);  
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;
+  border-bottom: 75px solid white;
+  width: 0; 
+  height: 0; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position:relative;
+}
+
+#small-fourth-triangle {
+  top:700px;
+  right:-800px;
+
+  -webkit-transform: rotate(60deg);
+  -moz-transform: rotate(60deg);
+  -o-transform: rotate(60deg);
+  -ms-transform: rotate(60deg);  
+  border-left: 100px solid transparent;
+  border-right: 100px solid transparent;
+  border-bottom: 125px solid white;
+  width: 0; 
+  height: 0; 
+  overflow-y: hidden;
+  overflow-x: hidden;
+  position:relative;
 }
 
 #second-triangle {

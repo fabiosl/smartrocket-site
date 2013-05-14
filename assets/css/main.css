@@ -129,6 +129,15 @@
   box-shadow: 0px 1px 10px #555;
   padding:8px 10px;
   border-radius: 6px;
+  z-index: 10;
+}
+
+#nave-inicio {
+  position:relative;
+  margin-top: -50px;
+  margin-left: -280px;
+  width: 200px;
+  z-index: 1;
 }
 
 .main-container-div{

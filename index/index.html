@@ -21,6 +21,7 @@
   <script src="../assets/js/parallax_animation.js"></script>
   <script src="../assets/js/sidr/jquery.sidr.min.js"></script>
   <script src="../assets/js/jquery.touchwipe.js"></script>
+  <script type="text/javascript" src="http://jqueryrotate.googlecode.com/svn/trunk/jQueryRotate.js"></script>
   <script src="../assets/js/main.js"></script>
   
   <script type="text/javascript">
@@ -54,17 +55,24 @@
     <!-- WE'RE SMARTROCKET -->
     <div id="were-smartrocket" class="main-container-div" style="margin-bottom:600px;">
       
+      <div id="small-first-triangle" class="small-triangle hideable"></div>
+      <div id="small-second-triangle" class="small-triangle hideable"></div>
+
       <div class="hideable" style="width:50%; height:100%; float:left;">
-        <div style="float:left"><img src="../assets/img/smartrocket_logo_black.png" /></div>
-        <!-- <div> <img style="width:200px"class="parallax-light" src="../assets/img/nave.png" /></div> -->
+        <!-- <div style="float:left"><img src="../assets/img/smartrocket_logo_black.png" /></div> -->
+        <div> <img id="nave-inicio" src="../assets/img/nave.png" /></div>
+        <div id="first-triangle"></div>        
       </div>
 
       <div id="were-smartrocket-text" style="text-align: right;width: 50%; float:right">
         <div style="margin-top: 30px;"class="showable"><img src="../assets/img/smartrocket_logo_black.png" /></div>
-        <span class="smartrocket_font big" style="font-size:700%; "> WE'RE SMART ROCKET </span>
+        <span class="smartrocket_font big" style="font-size:700%; z-index:10;"> WE'RE SMART ROCKET </span>
         <span class="audimat_regular subtitle" style="margin-bottom:10px;"> // WEB & MOBILE </span>
         <div style="">
-          <span class="audimat_italic normal" style="">We help startups & companies create stunning Websites & Mobile Apps. </span>
+          <span class="audimat_italic normal" style=""><p>We help startups & companies create stunning Websites & Mobile Apps. Our areas of expertise include Mobile and Software development! </p></span>
+          <span class="audimat_italic normal" style=""><p>We are based in Campina Grande - Brazil, one of the biggest technological poles in Latin America according to the American Magazine Newsweek. </p></span>
+          <span class="audimat_italic normal" style=""><p>Interested? Drop us a line! :) </p></span>
+
 
         </div>
         <br style="clear:both;"/>
@@ -73,9 +81,10 @@
 
     <!-- OUR WORK -->
     <div id="our-work" class="main-container-div" style="margin-bottom:150px">
+      <img src="../assets/img/smartrocket_logo_white.png" style="z-index:100; position:relative; float:left; margin-left:-500px;"/>
+      <img src="../assets/img/sr_devices.png" style="z-index:100; position:relative; margin-top:-100px">
       <label class="smartrocket_font big">OUR WORK</label>
       <label class="audimat_regular subtitle"  style="margin-bottom: 40px;"> //SOME COOL STUFF GOES HERE! :)</label>
-      <img src="../assets/img/sr_devices.png">
       <label class="audimat_italic" style="font-size: 20px; color: gray;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
 
       <label class="audimat_italic" style="font-size: 20px;margin-bottom: 100px; color: gray;">Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. Text describing what do we do. </label>
@@ -92,6 +101,8 @@
     <!-- Inner container -->
     <div class="container">
       <!-- HOW WE WORK-->
+      <div id="small-third-triangle" class="small-triangle hideable"></div>
+      <div id="small-fourth-triangle" class="small-triangle hideable"></div>
       <div id="how-we-work" class="main-container-div">
         <div>
           <label class="smartrocket_font big" style="color:white;" > HOW WE WORK </label>
@@ -157,13 +168,13 @@
 
         <div class="row" style="">
           <div class="span3">
-            <label class="audimat_regular normal" style=" color:white;;" >// Full Name</label>
+            <label class="audimat_regular normal" style=" color:white;;" name="contact_name">// Full Name</label>
             <input type="text" class="span3" placeholder="Your Full Name">
-            <label class="audimat_regular normal" style="color:white;;" >// Email Address</label>
+            <label class="audimat_regular normal" style="color:white;;" name="contact_email">// Email Address</label>
             <input type="text" class="span3" placeholder="Your email address">
-            <label class="audimat_regular normal" style="color:white;;" >// Message</label>
+            <label class="audimat_regular normal" style="color:white;;" name="contact_message">// Message</label>
             <textarea name="message" id="message" class="input-xlarge span5" rows="10" placeholder="What are you waiting for? Drop us a line!"></textarea>
-            <button type="submit" class="btn btn btn-inverse">Send</button>
+            <button type="submit" class="btn btn btn-inverse" id="send-message">Send</button>
           </div>
         </div>
         <!-- Social Icons -->
