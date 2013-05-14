@@ -159,7 +159,7 @@ var sendMail = function(){
         'name'      : $('[name=contact_name]').val(),
         'email'     : $('[name=contact_email]').val(),
         'subject'   : 'New Website Message',
-        'message'   : $('[name=contact_message]').val()
+        'message'   : $('#message').val()
     };
     $.ajax({
         type: "POST",
