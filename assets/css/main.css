@@ -1,33 +1,53 @@
 @font-face {
-  font-family: audimat_italic;
-  src: url('../fonts/webfontkit/audimat-italic-webfont.ttf');
+    font-family: "audimat_italic";
+    src: url('../fonts/audimat-italic-webfont.eot');
+    src: url('../fonts/audimat-italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/audimat-italic-webfont.woff') format('woff'),
+         url('../fonts/audimat-italic-webfont.ttf') format('truetype'),
+         url('../fonts/audimat-italic-webfont.svg#audimatitalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-  font-family: audimat_regular;
-  src: url('../fonts/webfontkit/audimat-regular-webfont.ttf');
+    font-family: "audimat_regular";
+    src: url('../fonts/audimat-regular-webfont.eot');
+    src: url('../fonts/audimat-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/audimat-regular-webfont.woff') format('woff'),
+         url('../fonts/audimat-regular-webfont.ttf') format('truetype'),
+         url('../fonts/audimat-regular-webfont.svg#audimatregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
 }
 
 @font-face {
-  font-family: smartrocket_font;
-  src: url('../fonts/LondrinaSolid-Regular.otf');
-}
+    font-family: "smartrocket_font";
+    src: url('../fonts/londrinasolid-regular-webfont.eot');
+    src: url('../fonts/londrinasolid-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/londrinasolid-regular-webfont.woff') format('woff'),
+         url('../fonts/londrinasolid-regular-webfont.ttf') format('truetype'),
+         url('../fonts/londrinasolid-regular-webfont.svg#londrina_solidregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
 
+}
 
 .audimat_italic{
-  font-family: audimat_italic; /* no .ttf */
+  font-family: "audimat_italic"; /* no .ttf */
   line-height:100%;
   display:block;
 }
 
 .audimat_regular{
-  font-family: audimat_regular; /* no .ttf */
+  font-family: "audimat_regular"; /* no .ttf */
   line-height:100%;
   display:block;
 }
 
 .smartrocket_font{
-  font-family: smartrocket_font; /* no .ttf */
+  font-family: "smartrocket_font"; /* no .ttf */
   line-height:100%;
   display: block;
 }
@@ -189,4 +209,29 @@
   display:none;
 }
 
-
+.overlay {
+  display:none;
+  position:fixed; 
+  top:0px; 
+  left:0px; 
+  width:100%; 
+  height:100%;
+  background-color: white; 
+  z-index: 999998; 
+  filter:alpha(opacity=50); 
+  -moz-opacity:0.5; 
+  -khtml-opacity: 0.5; 
+  opacity: 0.5; 
+}
+.overlay_inner{
+  position:fixed;
+  margin: 0 auto; 
+  width: 100px; 
+  height:100px; 
+  left:50%; 
+  top:50%; 
+  z-index: 999999; 
+  margin-left:-50px; 
+  margin-top:-50px; 
+  background-image:url('../img/ajax_loader.gif');
+}  
