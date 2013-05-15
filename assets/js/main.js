@@ -4,6 +4,10 @@ $(document).ready(function() {
     side: 'right'
   });
 
+  $('body').click(function() {
+   closeMenu()
+  });
+
   var scrollPosition = parseInt($(window).scrollTop());
 
   var element = $("#small-first-triangle");
