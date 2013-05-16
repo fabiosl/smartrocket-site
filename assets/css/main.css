@@ -273,6 +273,22 @@
 #contact-us .row label{
   color:white;
 }
+
 body{
   color:black;
+}
+
+#small-first-triangle{
+  -webkit-filter: blur(4px);
+}
+
+#small-second-triangle{
+ -webkit-filter: blur(2px);
+}
+
+#small-third-triangle{
+ -webkit-filter: blur(5px);
+}
+#small-fourth-triangle{
+ -webkit-filter: blur(5px);
 }
