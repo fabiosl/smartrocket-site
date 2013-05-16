@@ -73,6 +73,11 @@
   font-size: 25px;
 }
 
+#smartrocket-description{
+  text-align: right; 
+  max-width:400px;
+  float:right;
+}
 .circles{
   
   display: inline-table;
@@ -102,6 +107,7 @@
 
 .circle .hided {
   display:none;
+  font-size:90%;
 }
 
 .circle .circle-header {
@@ -147,7 +153,7 @@
 
 .normal{
   font-size: 130%; 
-  line-height:100%;
+  line-height:130%;
   width:100%;
 }
 
