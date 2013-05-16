@@ -1,10 +1,10 @@
 jQuery(document).ready(function(){
   jQuery('body')
   .each(function(){
-    jQuery('.parallax', this)
+    jQuery('#spaceship-bottom', this)
     .parallax(
         { mouseport: jQuery(this) },
-        { xparallax: '300px',    yparallax: '300px' }
+        { xparallax: '100px',    yparallax: '300px' }
     )
   });
 });
