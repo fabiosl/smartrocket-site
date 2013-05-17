@@ -107,7 +107,7 @@
 
 .circle .hided {
   display:none;
-  font-size:90%;
+  font-size:110%;
 }
 
 .circle .circle-header {
@@ -282,6 +282,8 @@
 
 body{
   color:black;
+  overflow-y: scroll;
+  overflow-x: hidden;
 }
 
 #small-first-triangle{
