@@ -20,7 +20,7 @@
 */
 
 $start_date = "2013/05/26"; //<-- Your site start date must be in this format yyyy/mm/dd
-$email = "contact@smartrocket.com.br"; //<-- Your email
+$email = "contato@smartrocket.com.br"; //<-- Your email
 $twitter_name = "smartrocketbr"; //<-- Twitter name you want to follow (show tweets) on page
 $signUpEmail = "contact@smartrocket.com.br"; //<<-- Email address for sending you subscribe notification
 $signUpNotificationSubject = "New site subscriber!"; //<<-- Email subscribe notification subject
