@@ -43,8 +43,8 @@
 }
 
 #small-second-triangle {
-  /*top:100px;
-  right:-1100px;*/
+  top:50px;
+  right:-300px;
 
   -webkit-transform: rotate(60deg);
   -moz-transform: rotate(60deg);
