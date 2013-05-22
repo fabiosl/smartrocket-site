@@ -168,7 +168,7 @@
 #simple-menu{
   position:fixed; 
   right:2%; 
-  top: 10%;
+  top: 5%;
   font-size: 18px; 
   font-weight:bold; 
   cursor:pointer; 
@@ -282,8 +282,6 @@
 
 body{
   color:black;
-  overflow-y: scroll;
-  overflow-x: hidden;
 }
 
 #small-first-triangle{
@@ -303,4 +301,12 @@ body{
 
 #triangle-down{
   background-image:url('../img/triangledown.png'); height:200px; text-align: right;background-repeat: no-repeat;
+}
+
+.sidr ul li a, .sidr ul li span{
+  padding-left:0px;
+  max-width: 200px;
+}
+#sidr{
+  margin-left:5px;
 }

@@ -20,10 +20,10 @@ $(document).ready(function() {
 
   var element = $("#small-second-triangle");
   element.data('params', {
-    top0:100,
-    x0:-1100,
-    top1:-250,
-    x1:-800
+    top0:0,
+    x0:-300,
+    top1:50,
+    x1:-100
   });
 
   $(window).resize(function() {
