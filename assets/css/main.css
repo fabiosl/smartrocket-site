@@ -69,6 +69,8 @@
   display:inline-block;
 }
 
+
+
 .subtitle{
   font-size: 25px;
 }
@@ -179,12 +181,20 @@
   z-index: 10;
 }
 
+#simple-menu span{
+  display:inline;
+}
+
 #nave-inicio {
   position:relative;
   margin-top: -50px;
   margin-left: -280px;
-  width: 200px;
+  width: 300px;
+  height:300px;
   z-index: 1;
+  background-image: url('../img/nave.png');
+  background-repeat: no-repeat;
+  display: inline-block;
 }
 
 .main-container-div{
@@ -194,6 +204,20 @@
   margin-top:100px;
 }
 
+#big-triangle-div{
+  width:50%;
+  height:100%;
+  float:left;"
+}
+
+.spaceship-top{
+  position: relative;
+  margin-top: -50px;
+  margin-left: -280px;
+  width: 200px;
+  z-index: 1;
+  background-image: url('../img/nave.png');
+}
 .black-box{
   background-color: black;
 }
@@ -279,6 +303,45 @@
 #contact-us .row label{
   color:white;
 }
+
+#were-smartrocket-text{
+  text-align: right; width: 50%; float:right
+}
+
+#black-logo{
+  max-width: 400px;
+  height: 100px;
+  background-image: url('../img/smartrocket_logo_black.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  margin: 0 auto;
+}
+
+.retangular-responsive-box{
+  position: relative;
+}
+
+.retangular-responsive-box:before{
+  content: "";
+  display: block;
+  padding-top: 51%;  /* initial ratio of 1:1*/
+}
+
+#our-work-image{
+  position:  absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  min-width: 100%;
+  height: auto;
+  background-image: url('../img/sr_devices.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
 
 body{
   color:black;
