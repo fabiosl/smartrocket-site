@@ -34,6 +34,10 @@
 
 }
 
+body{
+      background: url("../img/html.png");
+}
+
 .audimat_italic{
   font-family: "audimat_italic"; /* no .ttf */
   line-height:100%;
@@ -291,18 +295,16 @@
 }
 
 #contact-us{
-  background-color:black; 
   padding: 25px;
-  margin-top: 200px;
 }
 
 #contact-us .row{
   margin-top:15px;
 }
 
-#contact-us .row label{
+/*#contact-us .row label{
   color:white;
-}
+}*/
 
 #were-smartrocket-text{
   text-align: right; width: 50%; float:right
@@ -328,18 +330,8 @@
   padding-top: 51%;  /* initial ratio of 1:1*/
 }
 
-#our-work-image{
-  position:  absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  min-width: 100%;
-  height: auto;
-  background-image: url('../img/sr_devices.png');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100%;
+#our-work img{
+  margin:10px;
 }
 
 
