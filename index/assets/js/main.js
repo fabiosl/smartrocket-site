@@ -1,8 +1,5 @@
 $(document).ready(function() {
   
-  $('#simple-menu').sidr({
-    side: 'right'
-  });
 
   $('body').click(function() {
    closeMenu()
