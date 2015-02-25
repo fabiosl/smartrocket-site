@@ -362,3 +362,15 @@ body{
 #sidr{
   margin-left:5px;
 }
+
+.client-icon {
+  margin:10px;
+  display: inline-block;
+  border: 1px solid;
+  border-color:gray;
+  box-shadow: 0 0 2px rgba(0,0,0,0.6); -moz-box-shadow: 0 0 2px rgba(0,0,0,0.6); -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.6); -o-box-shadow: 0 0 2px rgba(0,0,0,0.6); border-radius: 3px;
+}
+
+.client-icon:hover{
+  
+}
