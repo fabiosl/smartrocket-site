@@ -331,7 +331,7 @@ body{
 }
 
 #our-work img{
-  margin:10px;
+  margin: 20px;
 }
 
 
@@ -364,13 +364,19 @@ body{
 }
 
 .client-icon {
+  padding:-10px;
   margin:10px;
   display: inline-block;
   border: 1px solid;
   border-color:gray;
-  box-shadow: 0 0 2px rgba(0,0,0,0.6); -moz-box-shadow: 0 0 2px rgba(0,0,0,0.6); -webkit-box-shadow: 0 0 2px rgba(0,0,0,0.6); -o-box-shadow: 0 0 2px rgba(0,0,0,0.6); border-radius: 3px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6); -moz-box-shadow: 0 0 15px rgba(0,0,0,0.6); -webkit-box-shadow: 0 0 15px rgba(0,0,0,0.6); -o-box-shadow: 0 0 15px rgba(0,0,0,0.6); border-radius: 3px;
+  -webkit-filter: grayscale(100%);
+  filter: url("data:image/svg+xml;filter: gray;utf8,<svg xmlns=\'http://www.w3.org/2000/s….3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
 }
 
 .client-icon:hover{
-  
+  -webkit-filter: none;
+  filter: none;
+   /*background-color: blue;*/
 }
+
