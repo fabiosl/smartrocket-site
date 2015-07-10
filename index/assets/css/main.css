@@ -380,3 +380,11 @@ body{
    /*background-color: blue;*/
 }
 
+.unscrollableOverlay {
+   background:transparent; 
+   position:relative; 
+   width:100%;
+   height:100%; /* your iframe height */
+   top:100%;  /* your iframe height */
+   margin-top:-100%;  /* your iframe height */
+}
